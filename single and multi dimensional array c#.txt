@@ -1,0 +1,97 @@
+sd pro1
+
+using System;
+namespace sd1
+{
+ class sd1
+ {
+ public static void Main(string[] args)
+ {
+ int[] arr = new int[] {50,60,70,80};
+ for(int i=0;i<4;i++)
+ {
+ Console.WriteLine(arr[i]);
+ }
+ Console.ReadLine();
+ }
+ }
+ }
+
+<<--!-->>
+
+sd pro2
+
+using System;
+namespace sd2
+{
+ class sd2
+ {
+ public static void Main(string[] args)
+ {
+ string[] arr = new string[] { "Blue", "Black", "yellow" };
+ foreach(string a in arr)
+ {
+ Console.WriteLine(a);
+ }
+ Console.ReadLine();
+ }
+ }
+}
+
+<<--!-->>
+
+md pro1
+
+using System;
+namespace md1
+ class md1
+ {
+ public static void Main(string[] args)
+ {
+ int i, j;
+ int[,] arr = new int[2, 2];
+Console.WriteLine("Enter the elements for 2 X 2 matrix");
+ for(i=0;i<2;i++)
+ {
+ for(j=0;j<2;j++)
+ {
+ Console.Write("Enter element at [{0},{1}] = ", i, j);
+ arr[i, j] = Convert.ToInt32(Console.ReadLine());
+ }
+ }
+ for (i = 0; i < 2; i++)
+ {
+ Console.Write("\n");
+ for (j = 0; j < 2; j++)
+ {
+ Console.Write("{0}\t", arr[i, j]);
+ }
+ }
+ }
+ }
+}
+
+<<--!-->>
+md pro2
+
+using System; 
+namespace md2 
+public class md2 
+{  
+    public static void Main(string[] args)  
+    {  
+        int[,] arr=new int[3,3];
+        arr[0,1]=10; 
+        arr[1,2]=20;  
+        arr[2,0]=30;   
+        for(int i=0;i<3;i++)
+        {  
+            for(int j=0;j<3;j++)
+            {  
+                Console.Write(arr[i,j]+" ");  
+            }  
+            Console.WriteLine(); 
+        }  
+        }
+        }
+

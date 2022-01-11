@@ -1,0 +1,82 @@
+  <<--!-->>
+  Structs with Methods
+using System;
+struct str
+{
+ int a,b;
+ public void get()
+ {
+ Console.WriteLine("Enter a No.");
+ a = Int32.Parse(Console.ReadLine());
+ b = Int32.Parse(Console.ReadLine());
+ }
+ public void show()
+ {
+ int c = a + b;
+ Console.WriteLine("Sum = " + c);
+ }
+}
+class abc
+{
+ public static void Main()
+ {
+ str obj = new str();
+ obj.get();
+ obj.show();
+ }
+}
+
+
+   <<--!-->>
+   Structs with Arguments
+using System;
+struct str
+{
+ int a,b;
+ public str(int x, int y)
+ a = x;
+ b = y;
+ }
+ publid int sum()
+ {
+ return(a + b);
+ }
+}
+class student
+{
+ public static void Main()
+ {
+ str obj = new str();
+ int c = obj.show();
+ Console.WriteLine("Sum = "+c);
+ }
+}
+
+
+   <<--!-->>
+   Nested Structs
+using System;
+struct student
+{
+ public String name,last;
+}
+struct Marks //Nested Structure
+{
+ public student s;
+ public int math, sci;
+}
+class nest
+{
+ public static void Main()
+ {
+ Marks m;
+ m.s.name = "Pardeep";
+ m.s.last = "Kumar";
+ m.math = 75;
+ m.sci = 70;
+ Console.WriteLine("Name = "+m.s.name);
+ Console.WriteLine("Last Name = "+m.s.last);
+ Console.WriteLine("Math Marks = "+m.math);
+ Console.WriteLine("Science = "+m.sci);
+ }
+}

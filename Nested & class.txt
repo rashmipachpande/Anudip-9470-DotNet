@@ -1,0 +1,59 @@
+<<--!-->>
+Nested
+using System;
+struct student
+{
+ public String name,last,address;
+}
+struct Marks
+{
+ public student s;
+ public int math, sci,eng,phy,hindi;
+}
+class nest
+{
+ public static void Main()
+ {
+ Marks m;
+ m.s.name = "Tejaswini";
+ m.s.last = "Hule";
+ m.s.address=" X-108 flat-5 Godrej colony vikhrolieast (400070)
+ m.math = 75;
+ m.sci = 70;
+ m.eng = 70;
+ m.phy = 80;
+ m.hindi = 90;
+ Console.WriteLine("Name = "+m.s.name);
+ Console.WriteLine("Last Name = "+m.s.last);
+ Console.WriteLine("Address = "+m.s.Address);
+ Console.WriteLine("Math Marks = "+m.math);
+ Console.WriteLine("Science = "+m.sci);
+ Console.WriteLine("English = "+m.eng);
+ Console.WriteLine("physics = "+m.phy);
+ Console.WriteLine("hindi = "+m.hindi);
+ }
+}
+
+
+<<--!-->>
+class
+public class MyClass
+{
+ public string myField = string.Empty;
+public MyClass()
+ {
+ }
+ public void MyMethod(int parameter1, string parameter2)
+ {
+ Console.WriteLine("First Parameter {0}, second parameter {1}",
+ parameter1, parameter2);
+ }
+ public int MyAutoImplementedProperty { get; set; }
+ private int myPropertyVar;
+
+ public int MyProperty
+ {
+ get { return myPropertyVar; }
+ set { myPropertyVar = value; }
+ }
+}

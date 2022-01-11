@@ -1,0 +1,72 @@
+Jagged Array 
+
+using System;
+namespace Studytonight
+{
+ class Program
+ {
+ public static void Main(string[] args)
+ {
+ int[][] arr = new int[][]
+ {
+ new int[] { 0, 1 },
+ new int[] { 20, 55 },
+ new int[] { 100, 119, 157, 555 }
+ };
+ for(int i=0; i<arr.Length;i++)
+ {
+ for(int j=0;j<arr[i].Length; j++)
+ {
+ System.Console.Write(arr[i][j] + " ");
+ }
+ System.Console.WriteLine();
+ }
+ Console.ReadLine();
+ }
+ }
+ }
+
+     <--!-->
+  Variable Program 
+
+using System;
+ namespace CSharpFeatures
+ {
+ class ImplicitTypedExample
+ {
+ public static void Main()
+ {
+ // integer
+ var a = 20;
+ // string
+ var s = "javatpoint";
+ // array
+ var arr = new[] { 1,2,3};
+ Console.WriteLine(a);
+ Console.WriteLine(s);
+ Console.WriteLine(arr[2]);
+ }
+
+
+      <--!-->
+  Dynamic program 
+class Demo
+{
+ dynamic Data = 12;
+ public int Method(int A, int B)
+ {
+ return (A + B) * Data;
+ }
+}
+class Program
+{
+ static void Main(string[] args)
+ {
+ DemoObj = newDemo();
+ dynamic value1 = 10;
+ dynamic value2 = 11;
+ dynamic Str = "Your Result Is: ";
+ Console.WriteLine(Str + Obj.Method(value1, value2));
+ Console.ReadLine();
+ }
+}
