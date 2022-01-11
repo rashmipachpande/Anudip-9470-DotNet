@@ -1,0 +1,22 @@
+
+@media (max-width:1024px){
+    .cards_wrap .card_item{
+        width: 33.3%;
+        
+    }
+}
+
+@media (max-width:768px){
+    .cards_wrap .card_item{
+        width: 100%;
+        
+    }
+   
+}
+
+@media (max-width:528px){
+    .cards_wrap .card_item{
+        width: 50%;
+        
+    }
+}

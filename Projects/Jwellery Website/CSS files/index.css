@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Estonia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ebebeb;
+    font-family: 'Dosis' Estonia;
+}
+
+nav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px 4px 10px;
+}
+
+.dflex{
+    display: flex;
+    align-items: center;
+}
+
+.dflex a:hover{
+    cursor: pointer;
+    color: #a8741a;
+}
+
+.dflex a i:hover{
+    color: #a8741a;
+}
+
+
+
+.item{
+    padding: 10px 10px;
+    color: #ebebeb;
+}
+
+.item:hover{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: -1px;
+}
+
+.wishlist i{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    color: #ebebeb;
+}
+
+.wishlist i:hover{
+    color: red;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: -1px;
+  }
+
+.wishlist p{
+    margin-left: -5px;
+    padding-top: 15px;
+}
+
+.logo{
+    text-align: center;
+    margin: 1px;
+    margin-bottom: -5px;
+    padding-right: 3px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+b{
+    color: #a8741a;
+    padding-top: 7px;
+}
+
+a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #a8741a;
+}
+
+a span{
+    font-size: 14px;
+    margin-left: -10px;
+}
+
+p{
+    font-size: 12px;
+    line-height: 15px
+}
+
+.item i{
+    padding: 0 5px;
+}
+
+.item i:hover{
+    color: #a8741a;
+}
+
+.item button{
+    font-size: 15px;
+    color: #ebebeb;
+    border: inherit;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.item button:hover{
+    color: #a8741a;
+}
+
+nav input{
+    width: 760px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+nav button{
+    padding: 10px 10px;
+    color: #000;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+nav .box{
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+nav .search{
+    padding: 10px 17px;
+    margin: -2px;
+    background: rgb(247, 155, 80);
+    border-radius: 0 5px 5px 0;
+    
+    
+}
+
+.subnavigation{
+    background-color: #232f3e;
+    padding: 6px 15px;
+
+}
+
+.submenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #2d2d2d;
+}
+
+ul li{
+    list-style: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+nav .submenu{
+    font-size: 16px;
+}
+
+.li{
+    margin: -5px;
+
+}
+
+.bg{
+    position: relative;
+    padding: 6px 6px;
+    margin: -5px;
+    margin-right: 10px;
+    background-color: rgb(247, 155, 80);
+}
+
+/*--login form--*/
+
+#login-form{
+    display: none;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: #000;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    transition: .5s;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: rgb(247, 155, 80);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group-login{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: rgb(247, 155, 80);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box{
+    margin: 30px 10px 34px 0;
+
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+
+}
+
+
+#login input{
+    color: #fff;
+    font-size: 15;
+}
+
+#register{
+    left: 450px;
+}
+
+#register input{
+    color: #fff;
+    font-size: 15;
+}
+
+/*---top-banner---*/
+
+
+.slideshow-container {
+  max-width: 500px;
+  position: absolute;
+  margin: auto;
+  
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.banner-content{
+    background-color: rgba(0,0,0,0.7);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-bottom: 12%;
+    max-width: 660px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.text {
+  color: #ebebeb;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  
+}
+
+.text p{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.text button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*--top-banner end--*/
+
+/*--middle-banner-content start--*/
+
+
+.content{
+    min-height: 700px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+
+ h1{
+    text-align: center;
+    color: #000;
+    padding: 20px;
+}
+
+.items a{
+    width: 30%;
+    display: block;
+    padding: 4px;
+    margin: 5px;
+    line-height: 1.42857143;
+    background-color: #000;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: left;
+    margin-left: 2%;
+}
+
+.thumbnail{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.caption{
+    color: #000;
+    padding: 0px 10px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+}
+
+.footer p{
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.social-media i{
+    border-radius: 50%;
+    padding: 6px
+}
+.social-media i:hover{
+    color: #a8741a;
+}
+
+.copyright{
+    background-color: #000;
+    padding: 20px;
+}
+
+
+
+
+/*=====ring.css start=====*/
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 250px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* ==== sidepanel css ==== */
+  
+
+li{
+    list-style:none;
+    display:inline;
+    font-size:25px;
+    
+}
+
+li:hover ul{
+    display: block;
+    position: absolute;   
+    background-color:#232f3e;
+    margin-left: -10px;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+li:hover ul li a:link {
+     display: block;       
+}
+
+li > ul {
+    display: none;
+    
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+.wrapper{
+   max-width: 100%;
+   margin-left: auto;
+  
+}
+.wrapper .card_wrap{
+    flex-wrap: wrap;
+}
+.cards_wrap .card_item{
+    width: 25%;
+    padding: 10px;
+}
+.cards_wrap .card_inner{
+    background: #000;
+}
+.cards_wrap .card_top{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom{
+    padding: 15px;
+}
+.cards_wrap .card_bottom .card_category{
+    text-transform: uppercase;
+    text-align: center;
+}
+.cards_wrap .card_bottom .card_info{
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px dashed #0071bc;
+}
+.rating p i{
+    color: #a8741a;
+    
+}
+.cards_wrap .card_bottom .card_info .title{
+    color: #0071bc;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.cards_wrap .card_bottom .card_price button{
+    margin-top: -3px;
+    padding: 5px; 
+    border-radius: 5px; 
+    background-color: rgb(247, 155, 80); 
+    float: right; 
+    cursor: pointer;
+}
+
+
+
+
