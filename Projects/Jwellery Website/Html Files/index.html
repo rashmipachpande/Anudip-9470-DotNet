@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+<head>
+    <title>Infinity Jewellery</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive-index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+    <!--header design start-->
+   
+    <nav>
+      <div class="left dflex">
+        <a href="#"><img src="imeges/infinity logo.png" alt="logo" class="logo" style="padding-bottom: 6px;"><b>JEWELLERY</b></a>
+      </div>
+      <div class="left dflex">
+        <a href="#" style="padding: 10px 10px;"><i class="fa fa-home" style="margin-right: 4px;"></i>Home</a>
+      </div>
+      <div class="left dflex">
+        <a href="about.html" style="padding: 10px 10px;">About</a>
+      </div>
+      <div class="left dflex">
+        <a href="about.html" style="padding: 10px 10px;"><i class="fa fa-phone" style="margin-right: 4px;">Contact Us</i></a>
+      </div>
+      <div class="right dflex">
+        <div class="item">
+          <h5 style="margin-right: 100px;"><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;"><i class="fa fa-user"></i>My Account</button></h5>
+        </div>
+        <div class="wishlist">
+          <i class="fa fa-heart" style="margin-right: 90px;"><p>0</p></i>
+        </div>
+        <div class="item">
+            <a href="Cart.html"><i class="fa fa-cart-plus">Cart</i></a>
+        </div>
+      </div>
+    </nav>
+    <div id="login-form" class="login-page">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" onclick="login()" class="toggle-btn">Login</button>
+          <button type="button" onclick="register()" class="toggle-btn">Register</button>
+        </div>
+        <form id="login" class="input-group-login">
+          <input type="text" class="input-field" placeholder="Email Id" required>
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="register" class="input-group-register">
+          <input type="text" class="input-field" placeholder="First Name" required>
+          <input type="text" class="input-field" placeholder="Last Name" required>
+          <input type="email" class="input-field" placeholder="Email Id" required>
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          <input type="password" class="input-field" placeholder="Confirm Password" required>
+          <input type="checkbox" class="check-box"><span>I agree to the term and conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <nav class="subnavigation">
+      <ul class="submenu">
+        <a href="#"><li><i class="fa fa-bars" style="margin-right: 3px;"></i>All
+          <ul>
+            <li><a href="ring.html">Rings</a></li>
+            <li><a href="bangle.html">Bangles</a></li>
+            <li><a href="watch.html">Watches</a></li>
+            <li><a href="Bridal Set.html">Bridal Set</a></li>
+            <li><a href="earing.html">Earings</a></li>
+            <li><a href="choker.html">Choker</a></li>
+          </ul>
+        </li></a>
+        <a href="ring.html"><li>Rings</li></a>
+        <a href="Bridal Set.html"><li>Bridal Set</li></a>
+        <a href="earing.html"><li>Earings</li></a>
+        <a href="bangle.html"><li>Bangles</li></a>
+        <a href="watch.html"><li>Watches</li></a>
+        <a href="#"><li>Offers<i class="fa fa-chevron-down" style="margin-left: 3px;"></i>
+          <ul>
+            <li><a href="#">Next day delivery</a></li>
+            <li><a href="#">Diwali offers</a></li>
+            <li><a href="#">40% off on 2 purchese</a></li>
+          </ul>
+        </li></a>
+      </ul>
+
+      <div class="searchBox"></div>
+      <div class="box">  
+            <input type="text" placeholder="Search Product.."/>
+          <button class="search" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+      </div>
+    </nav> 
+    
+    <!--header design end-->
+
+    <!-- top-banner-->
+    
+    <!-- Slideshow container -->
+<div class="slideshow-container-fluid">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="bg_img/bg_3.jpg.png" style="width:100%">
+    <div class="text">
+      <h2 style="padding-left: 290px;">Up to 20% Discount</h2>
+      <p style="padding-left: 220px;">"Jewellery gives you looks beautiful."</p>
+      <button class="button" style="margin-left: 300px;">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="bg_img/bg_4.jpg.png" style="width:100%">
+    <div class="text">
+      <h2 style="padding-left: 590px;">Up to 20% Discount</h2>
+      <p style="padding-left: 520px;">"Life isn't perfect but your jewellery can be."</p>
+      <button class="button" style="margin-left: 620px;">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="bg_img/bg_pearl.jpg.jpg" style="width:100%">
+    <div class="text">
+      <h2 style="padding-left: 1000px;">Up to 20% Discount</h2>
+      <p style="padding-left: 990px;">"All jewellery has stories."</p>
+      <button class="button" style="margin-left: 1040px;">Shop Now</button>
+    </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+
+<!--top-banner end-->
+
+    <!--middle-banner-content start-->
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="col-sm-12 content text-center">
+          <h1 class="text-center" style="background-color: #000; color: #ebebeb; margin-top: 20px;">Shop by Category</h1>
+        <div class="items"  style="margin-top: 100px;">
+          <a href="gold.html" style="border: none; background: transparent">
+              <img src="Imeges/gold.jpg" alt="item-1" class="thumbnail" style="border-radius: 50%; padding: 0;">
+          <div class="caption">
+              <h2 style="color: #000;">Gold</h2>
+          </div>
+          </a>
+        </div>
+
+        <div class="items">
+          <a href="diamond.html" style="border: none; background: transparent;">
+              <img src="Imeges/diamond.jpg" alt="item-1" class="thumbnail" style="border-radius: 50%;">
+          <div class="caption">
+              <h2 style="color: #000;">Diamond</h2>
+          </div>
+          </a>
+        </div>
+
+        <div class="items">
+          <a href="new arrival.html" style="border: none; background: transparent;">
+              <img src="Imeges/new arrival.png" alt="item-1" class="thumbnail" style="border-radius: 50%;">
+          <div class="caption">
+              <h2 style="color: #000;">New Arrivals</h2>
+          </div>
+          </a>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="col-sm-12 content text-center">
+        <h1 class="text-center" style="background-color: #000; color: #ebebeb; margin-bottom: 20px;">Shop by Products</h1>
+      <div class="items">
+        <a href="ring.html">
+            <img src="items/Ring-1.jpg" alt="item-1" class="thumbnail">
+        <div class="caption">
+            <h2>Rings</h2>
+            <p>Beautiful rings from the best brands.</p>
+        </div>
+        </a>
+      </div>
+  
+      <div class="items">
+          <a href="bangle.html">
+              <img src="bangles/Bangle-3.jpg" alt="item-2" class="thumbnail">
+          <div class="caption">
+              <h2>Bangles</h2>
+              <p>Beatiful bangles from the best brands.</p>
+          </div>
+          </a>
+        </div>
+
+        <div class="items">
+          <a href="watch.html">
+              <img src="items/Watch-1.jpg" alt="item-2" class="thumbnail">
+          <div class="caption">
+              <h2>Watches</h2>
+              <p>Original watches from the best brands.</p>
+          </div>
+          </a>
+        </div>
+     
+        <div class="items">
+        <a href="Bridal Set.html">
+            <img src="items/Nacklace-1.jpg" alt="item-3" class="thumbnail">
+        <div class="caption">
+            <h2>Bridal Set</h2>
+            <p>Our exquisite collection of nacklace.</p>
+        </div>
+        </a>
+        </div>
+
+        <div class="items">
+          <a href="earing.html">
+              <img src="earings/earing-18.jpg" alt="item-2" class="thumbnail">
+          <div class="caption">
+              <h2>Earings</h2>
+              <p>Handmade beaufitul bracelets from the best brands.</p>
+          </div>
+          </a>
+        </div>
+
+        <div class="items">
+          <a href="choker.html">
+              <img src="items/choker-1.jpg" alt="item-2" class="thumbnail">
+          <div class="caption">
+              <h2>Choker</h2>
+              <p>Our elegant collection of beautiful chokar nacklace.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!--middle-banner-content end-->
+
+  <!--footer start-->
+  
+  <div class="footer" >
+      <div class="container" style="display: flex; padding-bottom: 20px;">
+          <div class="about">
+              <h3 style="padding-left: 50px;">
+                  About Us
+                  <p><a href="about.html" style="padding: 10px; color: gray; padding-top: 20px;">Location</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">Brands</a></p>
+              </h3>
+          </div>
+          <div class="product">
+              <h3 style="padding-left: 40px;">
+                  Products
+                  <p><a href="#" style="padding: 10px; color: gray; padding-top: 20px;">Rings</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">Bangles</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">Nacklace</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">bracelete</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">Earings</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">Bridal Set</a></p>
+                  <p><a href="#" style="padding: 10px; color: gray;">Choker</a></p>
+              </h3>
+          </div>
+          <div class="inquiry">
+              <h3 style="padding-left: 80px; text-align: center;">
+                  Inquiry
+                  <p style="padding-top: 10px;"><input type="text" placeholder="Enter Email" style="color:#000;"></p>
+                  <br>
+                  <p><input type="tel" placeholder="Pincode"></p>
+                  <br>
+                  <p><button type="submit" class="btn" style="padding: 5px; background-color: rgb(247, 155, 80); border-radius: 3px; cursor: pointer;">Submit</button></p>
+              </h3>
+          </div>
+          <div class="contact">
+              <h3 style="padding-left: 450px; text-align: center;">
+                  Contact
+                  <p style="padding-left: 10px;"><a href="#"><i class="fa fa-home" style="padding: 10px; color: gray;  padding-top: 20px;"> Latur - 413530, India</i></a></p>
+                  <p style="padding-left: 10px;"><a href="#"><i class="fa fa-envelope" style="padding: 10px; color: gray;"> info@example.com</i></a></p>
+                  <p style="padding-left: 10px;"><a href="#"><i class="fa fa-phone" style="padding: 10px; color: gray;"> +91 90000 00000</i></a></p>
+                  <p style="padding-left: 10px;"><a href="#"><i class="fa fa-whatsapp" style="padding: 10px; color: gray;"> +91 96000 00000</i></a></p>
+              </h3>
+          </div>
+          <div class="social-media">
+              <h3 style="padding-left: 50px;">
+                  Follow Us
+                  <p><a href="#" style="padding: 10px; color: gray; padding-top: 20px; padding-left: 40px;"><i class="fa fa-facebook" style=" background-color: #4267B2;"></i></a></p>
+                  <p><a href="#" style="padding: 10px; color: gray; padding-left: 40px;"><i class="fa fa-instagram" style=" background-color: #fb3958;"></i></a></p>
+                  <p><a href="#" style="padding: 10px; color: gray; padding-left: 40px;"><i class="fa fa-google-plus" style=" background-color: #db4a39;"></i></a></p>
+                  <p><a href="#" style="padding: 10px; color: gray; padding-left: 40px;"><i class="fa fa-twitter" style=" background-color: #00acee;"></i></a></p>
+                  <p><a href="#" style="padding: 10px; color: gray; padding-left: 40px;"><i class="fa fa-linkedin" style=" background-color: #0077b5;"></i></a></p>
+              </h3>
+          </div>
+      </div>
+        <ul class="copyright" style="border-top: 1px solid gray; padding-top: 20px; text-align: center;">
+          <li>"Copyright © Infinity Jewellery. All Rights Reserved"</li>
+    </div>
+  </div>
+
+  <!--footer end-->  
+    
+    <!--javascript start-->
+    <script>
+      var x=document.getElementById('login')
+      var y=document.getElementById('register')
+      var z=document.getElementById('btn')
+      function register()
+      {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+      }
+      function Login()
+      {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+      }
+    </script>
+    <script>
+      var modal = document.getElementById('login-form');
+      window.onclick = function(event)
+      {
+        if (event.target == modal)
+        {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+
+    </script>
+
+
+  </body>
+  </html>
+
+   
