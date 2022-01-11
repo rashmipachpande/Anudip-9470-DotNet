@@ -1,0 +1,147 @@
+  <<--!-->>
+  String
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ char[] charArray = {'C', 'o', 'd', 'e', 's', 'D', 'o', 'p', 'e'};
+ String s = new String(charArray);
+ Console.WriteLine(s);
+ }
+}
+
+  <<--!-->>
+  Length
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ Console.WriteLine(a.Length);
+ }
+}
+
+
+  <<--!-->>
+  Concat
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "Codes";
+ string b = "Dope";
+ String c = String.Concat(a, b);
+ Console.WriteLine(c);
+ }
+}
+
+    <<--!-->>
+    Compare
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "Codes";
+ string b = "Dope";
+ int x = String.Compare(a, b);
+ int y = String.Compare(b, a);
+ Console.WriteLine(x);
+ Console.WriteLine(y);
+ }
+}
+
+   <<--!-->>
+   Same Value or not
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "Codes";
+ string b = "Dope";
+ Console.WriteLine(a.Equals(b));
+ }
+}
+  
+   <<--!-->>
+   To get the index of any character of a string.
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ Console.WriteLine(a.IndexOf('D'));
+ }
+}
+  
+  <<--!-->>
+  LastIndexOf
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ Console.WriteLine(a.LastIndexOf('o'));
+ }
+}
+
+  <<--!-->>
+  Replace 
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ string b = a.Replace("Dope", "Codes");
+ Console.WriteLine(b);
+ }
+}
+  
+  <<-!-->>
+  Substring 
+using System;
+class Test
+{
+static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ string b = a.Substring(5);
+ Console.WriteLine(b);
+ }
+}
+
+  <<--!-->>
+  Lower case
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ string b = a.ToLower();
+ Console.WriteLine(b);
+ }
+}
+
+  <<--!-->>
+ Upper Case
+using System;
+class Test
+{
+ static void Main(string[] args)
+ {
+ string a = "CodesDope";
+ string b = a.ToUpper();
+ Console.WriteLine(b);
+ }
+}
+
+
+    
